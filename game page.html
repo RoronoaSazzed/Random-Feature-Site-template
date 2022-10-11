@@ -17,250 +17,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="style.css" />
     <title>Game Page</title>
-
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Poppins", sans-serif;
-      }
-
-      :root {
-        --primary__color: #b5121b;
-        --border__radius: 15px;
-      }
-
-      .container__full {
-        width: 100%;
-        overflow-x: hidden;
-        position: relative;
-        display: grid;
-        place-items: center;
-        padding: 30px 0px;
-      }
-
-      .container {
-        width: 100%;
-        max-width: 1160px;
-        margin: 0 auto;
-      }
-
-      .title__bar {
-        font-weight: 200;
-        padding: 15px 0px;
-        text-align: center;
-        background-color: #fdb913;
-      }
-
-      .single__app {
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-      }
-
-      .image__sec {
-        flex: 1;
-        padding: 15px;
-      }
-
-      .feature__img {
-        padding: 15px;
-        background-color: white;
-        border: 1px solid #f2f4f8;
-        box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.11);
-      }
-
-      .carousel {
-        margin: 30px 0px;
-        padding: 10px 0px;
-      }
-
-      .content {
-        flex: 1;
-        padding: 0 20px 20px 20px;
-      }
-
-      .img__responsive {
-        max-width: 100%;
-      }
-
-      .game__title {
-        font-size: 35px;
-        font-weight: 400;
-        color: #121212;
-        margin-bottom: 20px;
-      }
-
-      .game__title span {
-        font-size: 18px;
-        color: #b5121b;
-      }
-
-      .description {
-        margin: 20px 0;
-      }
-
-      .description p {
-        margin: 20px 0;
-      }
-
-      .features {
-        margin-top: 30px;
-      }
-
-      .features h1 {
-        font-weight: 400;
-        text-transform: capitalize;
-        font-size: 24px;
-      }
-
-      .feature__list {
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        flex-direction: column;
-      }
-
-      .list__item {
-        display: flex;
-        align-items: stretch;
-        justify-content: center;
-      }
-
-      .list__icon {
-        padding-top: 15px;
-        margin-right: 15px;
-      }
-
-      .list {
-        padding-top: 15px;
-      }
-
-      .social__info {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: stretch;
-        margin-top: 30px;
-      }
-
-      .social__list {
-        flex: 1;
-        padding: 15px;
-        display: flex;
-        flex-direction: column;
-      }
-
-      .icon__code {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-      }
-
-      .social__icon,
-      .social__qr__code {
-        flex: 1;
-        padding: 5px;
-      }
-
-      .social__icon img {
-        aspect-ratio: 1 / 1;
-      }
-
-      .social__name {
-        font-weight: 500;
-        font-size: 16px;
-        text-transform: capitalize;
-        letter-spacing: 1px;
-      }
-
-      .social__desc a {
-        text-decoration: none;
-        color: #fdb913;
-      }
-
-      .social__desc a:hover {
-        text-decoration: underline;
-      }
-
-      .social__desc p {
-        font-size: 12px;
-        font-weight: 500;
-        color: grey;
-        margin-top: 15px;
-      }
-
-      .title__more__games {
-        font-weight: 400;
-        font-size: 25px;
-        margin-bottom: 30px;
-      }
-
-      .same__categories__products {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: stretch;
-        justify-content: space-between;
-        align-items: center;
-        padding: 15px;
-      }
-
-      .products {
-        flex: 1;
-        width: 20%;
-        margin: 15px;
-        padding: 20px;
-        background-color: white;
-        border: 1px solid #f2f4f8;
-        border-radius: var(--border__radius);
-      }
-
-      .products a {
-        font-size: 13px;
-        color: #fdb913;
-        text-decoration: none;
-      }
-
-      .products a:hover {
-        text-decoration: underline;
-      }
-
-      .products img {
-        border-radius: var(--border__radius);
-        max-width: 100px;
-      }
-
-      .game__name {
-        font-weight: 400;
-        font-size: 17px;
-        margin: 15px 0;
-      }
-
-      .short__desc {
-        margin-top: 10px;
-        font-size: 13px;
-        letter-spacing: 0.5px;
-      }
-
-      @media (min-width: 320px) and (max-width: 480px) {
-        .single__app {
-          flex-direction: column;
-        }
-
-        .social__list {
-          max-width: 50%;
-        }
-
-        .same__categories__products {
-          flex-direction: column;
-        }
-
-        .products {
-          width: 80%;
-        }
-      }
-    </style>
   </head>
   <body>
     <h1 class="title__bar">Halloween Dance Party</h1>
@@ -280,7 +38,9 @@
           </div>
         </div>
         <div class="content">
-          <h3 class="game__title">Halloween Dance Party <span>v1.0.1</span></h3>
+          <h3 class="single__game__title">
+            Halloween Dance Party <span>v1.0.1</span>
+          </h3>
 
           <div class="description">
             <p>
@@ -461,6 +221,26 @@
           </p>
 
           <a href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer container__full">
+      <div class="container">
+        <p>My software doesn't have bugs, it just develops random features.</p>
+        <p>© 2022 | All Right Reserved | Random Features Inc.</p>
+        <div class="footer__social">
+          <a href="#">
+            <i class="fa-brands fa-google-play"></i>
+          </a>
+
+          <a href="#">
+            <i class="fa-brands fa-amazon"></i>
+          </a>
+
+          <a href="#">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
         </div>
       </div>
     </div>
