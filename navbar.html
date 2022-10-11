@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Navabar</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .navbar {
+        min-height: 0vh;
+        padding: 15px 0px;
+        box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.07);
+        position: relative;
+        overflow-x: hidden;
+      }
+
+      .menu__wrapper {
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        max-width: 1160px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 15px;
+        flex-wrap: wrap;
+      }
+
+      .logo {
+        flex: 1;
+      }
+
+      .img__responsive {
+        width: 100%;
+        max-width: 250px;
+      }
+
+      .toggle__button {
+        display: none;
+      }
+
+      .menu__options {
+        flex: 3;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+      }
+
+      .menu__items {
+        text-decoration: none;
+        font-family: "Poppins", sans-serif;
+        color: #121212;
+        text-transform: capitalize;
+        padding: 5px 15px;
+        margin-left: 15px;
+        font-weight: 500;
+        transition: 300ms;
+      }
+
+      .menu__items:hover {
+        color: #b5121b;
+      }
+
+      @media (min-width: 320px) and (max-width: 480px) {
+        .logo {
+          text-align: center;
+          width: 70%;
+          margin-right: auto;
+        }
+
+        .toggle__button {
+          background-color: transparent;
+          border: none;
+          display: block;
+          font-size: 25px;
+          position: absolute;
+          top: 50%;
+          right: 15px;
+          transform: translateY(-50%);
+        }
+
+        .toggle__button:active {
+          color: #b5121b;
+        }
+
+        .menu__wrapper {
+          flex-direction: column;
+        }
+
+        .menu__options {
+          text-align: left;
+          flex-direction: column;
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          transform: translate(-50%, 0%);
+          width: 100%;
+          background-color: white;
+          box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.07);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="menu__wrapper">
+        <div class="logo">
+          <a href="#">
+            <img class="img__responsive" src="Logo Main.svg" alt="" />
+          </a>
+        </div>
+        <button class="toggle__button"><i class="fa-solid fa-bars"></i></button>
+        <div class="menu__options">
+          <a class="menu__items" href="#">home</a>
+          <a class="menu__items" href="#">game</a>
+          <a class="menu__items" href="#">live wallpaper</a>
+          <a class="menu__items" href="#">support</a>
+          <a class="menu__items" href="#">about</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

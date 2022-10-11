@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Home</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      :root {
+        --primary__color: #b5121b;
+        --border__radius: 15px;
+      }
+
+      .container__full {
+        width: 100%;
+        overflow-x: hidden;
+        position: relative;
+        display: grid;
+        place-items: center;
+        padding: 70px 0px;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 1160px;
+        margin: 0 auto;
+      }
+
+      .flex__row {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .game__box {
+        width: 30%;
+        border-radius: var(--border__radius);
+        padding: 20px;
+        position: relative;
+        box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.11);
+        transition: 300ms;
+      }
+
+      .game__box:hover {
+        cursor: context-menu;
+        box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.21);
+      }
+
+      .release__date {
+        display: inline-block;
+        margin-left: auto;
+        padding: 5px 15px;
+        font-weight: 200;
+        letter-spacing: 1px;
+        padding: 5px 10px;
+        background-color: #b5121b;
+        color: white;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      .game__icon {
+        display: block;
+        width: 100%;
+        max-width: 120px;
+        border-radius: var(--border__radius);
+      }
+
+      .game__title {
+        margin: 25px 0 15px 0;
+        font-weight: 200;
+        font-size: 25px;
+      }
+
+      .button__section {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        margin: 20px 0;
+      }
+
+      .learn__more__button {
+        display: grid;
+        place-content: center left;
+        flex: 1;
+        margin: 0 5px;
+      }
+
+      .learn__more__button a {
+        color: #121212;
+      }
+
+      .learn__more__button a:hover {
+        color: #b5121b;
+      }
+
+      .img__responsive {
+        max-width: 100%;
+      }
+
+      .google__play {
+        display: inline-block;
+        flex: 1;
+        margin: 0 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container__full">
+      <div class="container">
+        <div class="flex__row">
+          <div class="game__box">
+            <p class="release__date">09.14.2012</p>
+            <img class="game__icon" src="image/sample icon.png" alt="" />
+            <h3 class="game__title">Halloween Dance Party</h3>
+            <p class="description">
+              Keep the party rocking with Halloween Dance Party! Challenge your
+              memory with this Simon-like game by matching the correct pattern
+              to keep your creeps busting their best moves.
+            </p>
+            <div class="button__section">
+              <div class="learn__more__button">
+                <a href="#">Learn More</a>
+              </div>
+              <a class="google__play" href="#"
+                ><img
+                  class="img__responsive"
+                  src="image/Play store Redirect.png"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="game__box">
+            <p class="release__date">09.14.2012</p>
+            <img class="game__icon" src="image/sample icon.png" alt="" />
+            <h3 class="game__title">Halloween Dance Party</h3>
+            <p class="description">
+              Keep the party rocking with Halloween Dance Party! Challenge your
+              memory with this Simon-like game by matching the correct pattern
+              to keep your creeps busting their best moves.
+            </p>
+            <div class="button__section">
+              <div class="learn__more__button">
+                <a href="#">Learn More</a>
+              </div>
+              <a class="google__play" href="#"
+                ><img
+                  class="img__responsive"
+                  src="image/Play store Redirect.png"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="game__box">
+            <p class="release__date">09.14.2012</p>
+            <img class="game__icon" src="image/sample icon.png" alt="" />
+            <h3 class="game__title">Halloween Dance Party</h3>
+            <p class="description">
+              Keep the party rocking with Halloween Dance Party! Challenge your
+              memory with this Simon-like game by matching the correct pattern
+              to keep your creeps busting their best moves.
+            </p>
+            <div class="button__section">
+              <div class="learn__more__button">
+                <a href="#">Learn More</a>
+              </div>
+              <a class="google__play" href="#"
+                ><img
+                  class="img__responsive"
+                  src="image/Play store Redirect.png"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
